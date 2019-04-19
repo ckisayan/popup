@@ -1,0 +1,15 @@
+
+retrieving insruction id:<b>{{instructionid}}</b>
+<hr>
+Message from parent local storage:<b> {{messageFromLocalStorage}}</b>
+<hr>
+Message from parent session storage <b>{{messageFromSessionStorage}}</b>
+<hr>
+
+value will be recieved when you type something:<b> {{ messageFromBroadCast }}</b>
+
+<hr>
+this is sending something back
+<input type="text"  value=""
+  (input)="sendMessageToErrorNotes($event)" autofocus>
+<hr>
