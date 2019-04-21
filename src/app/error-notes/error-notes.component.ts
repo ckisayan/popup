@@ -21,11 +21,11 @@ export class ErrorNotesComponent implements OnInit {
     //     this.instructionid = data['id'];
     //   }
     // );
-    // this.bs.channel.onmessage = event => {
-    //   this.message = event.data;
-    //   this.changeDetectorRef.detectChanges();
-    // };
-    // this.instructionid = this.route.snapshot.params['id'];
+    this.bs.channel.onmessage = event => {
+      this.message = event.data;
+      this.changeDetectorRef.detectChanges();
+    };
+    this.instructionid = this.route.snapshot.params['id'];
 
 
   }

@@ -15,7 +15,9 @@ export class ErrorNotes2Component implements OnInit {
   messageFromSessionStorage = '';
 
   constructor(private route: ActivatedRoute, private bs: NotesFriendlyUiBroadcaster,
-    private changeDetectorRef: ChangeDetectorRef) { }
+    private changeDetectorRef: ChangeDetectorRef) {
+      console.log ('noets2 was called.');
+    }
 
   ngOnInit() {
 
